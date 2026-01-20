@@ -2,17 +2,14 @@ E-Voting System
 
 A full-stack voting application with Spring Boot (backend), React (frontend), and MySQL. Users can create elections, add choices, cast votes, and get winners.
 
-Features
+Features:
 
 Add/list users, elections, and choices
-
 Cast votes and count totals
-
 Get the winning choice for an election
-
 Reset votes (all or per election)
 
-Tech Stack
+Tech Stack:
 
 Backend: Spring Boot
 
@@ -22,15 +19,15 @@ Database: MySQL
 
 API: REST
 
-Setup
+Setup:
 
-Backend
+Backend:
 
 cd EvotingSystem-Backend
 
 mvn spring-boot:run
 
-Frontend
+Frontend:
 
 cd EvotingSystem-Frontend
 
@@ -38,13 +35,13 @@ npm install
 
 npm start
 
-Database
+Database:
 
 configure MySql in application.properties
 
 Backend runs on http://localhost:8082, frontend on http://localhost:3000.
 
-API Endpoints
+API Endpoints:
 
 POST /add/user – Add user
 
