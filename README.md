@@ -4,7 +4,7 @@ Full-stack E-Voting app with Spring Boot backend, React frontend, and MySQL data
 
 Features
 
-Add users, elections, and choices
+Add users, elections, and choices.
 Cast votes and get election winner
 
 Setup
