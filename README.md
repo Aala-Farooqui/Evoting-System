@@ -28,8 +28,6 @@ Backend
 
 cd EvotingSystem-Backend
 
-# configure MySQL in application.properties
-
 mvn spring-boot:run
 
 Frontend
@@ -39,6 +37,10 @@ cd EvotingSystem-Frontend
 npm install
 
 npm start
+
+Database
+
+configure MySql in application.properties
 
 Backend runs on http://localhost:8082, frontend on http://localhost:3000.
 
