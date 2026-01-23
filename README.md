@@ -1,80 +1,71 @@
-E-Voting System
+# E-Voting System
 
-A full-stack voting application with Spring Boot (backend), React (frontend), and MySQL. Users can create elections, add choices, cast votes, and get winners.
+A full-stack voting application built with **Spring Boot**, **React**, and **MySQL**.  
+Users can create elections, add choices, cast votes, and determine winners.
 
-Features:
+---
 
-Add/list users, elections, and choices
+## Features
 
-Cast votes and count totals
+- Add and list users
+- Create and manage elections
+- Add choices to elections
+- Cast votes and count totals
+- Get the winning choice for an election
+- Reset votes (globally or per election)
 
-Get the winning choice for an election
+---
 
-Reset votes (all or per election)
+## Tech Stack
 
-Tech Stack:
+- **Backend:** Spring Boot
+- **Frontend:** React.js
+- **Database:** MySQL
+- **API:** REST
 
-Backend: Spring Boot
+---
 
-Frontend: React.js
+## ⚙️ Setup
 
-Database: MySQL
-
-API: REST
-
-Setup:
-
-Backend:
-
+### Backend 
+```bash
 cd EvotingSystem-Backend
+mvn spring-boot
 
-mvn spring-boot:run
-
-Frontend:
-
+###Frontend
 cd EvotingSystem-Frontend
-
 npm install
-
 npm start
 
-Database:
+##Database
+Configure MySQL in application.properties
+Backend runs on http://localhost:8082
+Frontend runs on http://localhost:3000
 
-configure MySql in application.properties
-
-Backend runs on http://localhost:8082, frontend on http://localhost:3000.
-
-API Endpoints:
-
+API Endpoints
+###User
 POST /add/user – Add user
-
 GET /get/users – List users
-
+###Election
 POST /add/election – Create election
-
 GET /get/elections – List elections
-
+###Choices
 POST /add/electionChoice – Add choice
-
 GET /get/electionChoices – List choices
-
+###Voting
 POST /add/vote – Cast vote
-
 GET /get/votes – List votes
-
 GET /count/votes – Total votes
-
+###Results
 POST /winner/election – Get election winner
-
+###Reset
 DELETE /reset-votes – Reset all votes
-
 DELETE /{id}/reset-votes – Reset votes for one election
 
-Usage Flow
-
+##Usage Flow
 Add users → Create elections → Add choices → Cast votes → Get winners → Reset votes if needed
 
-License
+##License
+MIT
 
-MIT License
 
